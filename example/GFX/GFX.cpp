@@ -132,7 +132,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  delay(2);
+  delay(100);
+  gfx->draw16bitRGBBitmap(0, 0, (uint16_t *)logo_img, 480, 480);
+  delay(100);
+  gfx->draw16bitRGBBitmap(0, 0, (uint16_t *)gImage_img2, 480, 480);
 }
 
 void lcd_send_data(uint8_t data) {
